@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <script src="hack3.js" defer></script>
+    <link rel="stylesheet" href="hack3.css">
+    <link rel="icon" href="favicon h.ico"
+</head>
+
+<body>
+    <img src="logo.png" width="140" height="140" ;>
+    <div class="main">
+        <div class="head">
+            <ul class="tabs">
+                <li data-tab-target="#creditcard" class="active tab"> CREDIT-CARD </li>
+                <li data-tab-target="#netbanking" class="active tab">NET-BANKING</li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <div id="creditcard" data-tab-content class="active" class="cre">
+                <form id="credit">
+                    <label for="username">CARD OWNER</label>
+                    <input type="text" id="name" name="name" placeholder="card owner details">
+                    <br><br>
+                    <label>CARD NUMBER</label>
+                    <input type="number" id="name" name="name" placeholder="valid card number">
+                    <br><br>
+                    <label>EXPIRATION DATE</label>
+                    <input type="number" id="sname" name="name" placeholder="MM">
+                    <input type="number" id="sname" name="name" placeholder="YY">
+                    <br><br>
+                    <label>CVV</label>
+                    <input type="number" id="sname" name="name">
+                    <br><br>
+                    <button  id="process">CONFORM PAYMENT</button>
+
+                </form>
+            </div>
+            <div id="netbanking" data-tab-content>
+                <form id="netb">
+                    <br>
+                    <label>SELECT YOUR BANK</label>
+                    <select required>
+                        <option value="">enter bank name</option>
+                        <option>GPay</option>
+                        <option>PhonePe </option>
+                        <option>Patym</option>
+                    </select>
+                    <br><br><br><br>
+                    <button id="summit">Proceed Payment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
